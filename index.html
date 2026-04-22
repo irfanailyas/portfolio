@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | John Doe</title>
+    <meta name="description" content="Professional portfolio of John Doe, Frontend Developer.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"></a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Profile Picture of John Doe">
+                </div>
+                <div class="about-content">
+                    <h1>Hi, I'm Ayshath Irfana I H</h1>
+                    <h2>Full Stack Developer</h2>
+                    <p>I build clean, responsive, and user-friendly web interfaces. With a strong passion for modern web technologies, I strive to create web applications that provide an intuitive and dynamic user experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="images/project1.jpg" alt="Dashboard Project" class="project-img">
+                        <div class="project-info">
+                            <h3>Analytics Dashboard</h3>
+                            <p>A data visualization dashboard built with HTML, CSS, and modern web principles, focusing on clean layout and responsive design.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="images/project2.jpg" alt="E-commerce Project" class="project-img">
+                        <div class="project-info">
+                            <h3>E-commerce Store</h3>
+                            <p>A fully responsive e-commerce storefront featuring product grids, centered content, and card-based design.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="images/project3.jpg" alt="Mobile App Interface" class="project-img">
+                        <div class="project-info">
+                            <h3>Mobile App Landing Page</h3>
+                            <p>A promotional landing page showcasing a mobile app interface with smooth spacing and neutral typography.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
